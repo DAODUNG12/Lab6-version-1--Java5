@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 10, 2017 8:25:30 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.xml.NhanVien" table="NhanVien" schema="dbo" catalog="Personel" optimistic-lock="version">
+        <id name="manv" type="int">
+            <column name="manv" />
+            <generator class="assigned" />
+        </id>
+        <property name="hoten" type="string">
+            <column name="hoten" length="50" />
+        </property>
+        <property name="diachi" type="string">
+            <column name="diachi" length="50" />
+        </property>
+        <property name="gioitinh" type="java.lang.Boolean">
+            <column name="gioitinh" />
+        </property>
+    </class>
+</hibernate-mapping>
